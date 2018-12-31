@@ -34,5 +34,7 @@ This will mean you have all the elements needed to do a PXE boot as well.
 This is from the [arch PXE boot instructions](https://wiki.archlinux.org/index.php/PXE)
 
 Once booted and having done the usual 
-''' pacman -Syu
+```
+pacman -Syu
+```
 to bring things up to date, install
