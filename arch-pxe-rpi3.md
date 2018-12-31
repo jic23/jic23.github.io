@@ -1,4 +1,4 @@
-#PXE Booting a Raspberry Pi 3 with Arch
+# PXE Booting a Raspberry Pi 3 with Arch
 
 There are detailed instructions on the Rasberry Pi website for doing a PXE boot with the slightly odd assumption
 that it makes sense to use another Raspberry Pi as the server.   This may be a low cost option, but mostly I suspect
