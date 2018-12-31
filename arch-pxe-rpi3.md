@@ -1,9 +1,18 @@
 # PXE Booting a Raspberry Pi 3 with Arch
 
+## Why would you want to do this?
+
+PXE booting allows you to boot a Raspberry PI 3 without any SD card.  All of the files are pulled over the network.
+This has several advantages:
+
+- No SD card so cost saving if you are running lots of them.
+- Very simple development cycle, particularly if you are working on the Kernel or other low level OS components as you can avoid having to constantly flash to the SD card.
+
 There are detailed instructions on the Rasberry Pi website for doing a PXE boot with the slightly odd assumption
 that it makes sense to use another Raspberry Pi as the server.   This may be a low cost option, but mostly I suspect
 the reason people want to do PXE boots in the first place is to shorten the development loop by taking out the
-need to flash an SD card or work natively on the RPI.
+need to flash an SD card or work natively on the RPI.  Thus they are much more likely to want to run the PXE server
+and tftp / nfs servers on a development machine or a dedicated high performance server.
 
 ## Step 1, get it booting off an SD card
 
