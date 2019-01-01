@@ -33,8 +33,19 @@ This will mean you have all the elements needed to do a PXE boot as well.
 
 This is from the [arch PXE boot instructions](https://wiki.archlinux.org/index.php/PXE)
 
-Once booted and having done the usual 
+First boot and bring Arch up to date by the usual 
 ```
 pacman -Syu
 ```
-to bring things up to date, install
+Then install the additional package mkinitcpio-nfs-utils
+```
+pacman -S mkinitcpio-nfs-utils
+```
+
+This will add a few useful scripts and also a copy of ipconfig that no major dependencies.  
+
+
+
+## THINGS TO NOTE THAT I HAVE TO COVER YET
+
+- Delay needed in net script if using built in network driver (udev is too quick for the usb bring up)
